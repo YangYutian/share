@@ -1,0 +1,41 @@
+JavaScript是面向对象的脚本语言，在JavaScript中，几乎所有的事物都是对象。JavaScript对象是属性和方法的容器。其中包括JavaScript内置对象，Browser对象，HTML DOM对象。
+定义对象：
+    var person = {
+      firstName : "John",
+      lastName : "Doe",
+      age : 50,
+      eyeColor : "blue",
+      like : function(){
+        return "计算机，音乐";
+      }
+    };
+用person.firstName的形式来访问属性和方法。
+JavaScript内置对象主要有Number对象,String对象，Date对象，Array对象，Boolean对象，Math对象，RegExg对象。
+Number对象：JavaScript只有一种数字类型，所有的JavaScript数字均为64位；
+  var pi = 3.14;//使用小数点；默认情况下，JavaScript数字为十进制显示。
+  var x = 0xFF,y = 0377;//如果前缀为0，则JavaScript会把数值常量解释为八进制数，如果前缀为 0 和 "x"，则解释为十六进制数。
+使用Number类型的toString()方法可以输出16进制、8进制、2进制。
+  var iNum = 10;
+  alert(iNum.toString(2));	//输出 "1010"
+  alert(iNum.toString(8));	//输出 "12"
+  alert(iNum.toString(16));	//输出 "A"
+String对象：一个字符串可以使用单引号或双引号：
+  var name = "Michael Scofield";
+  var name = 'Michael Scofield';
+Date对象：用于处理日期和时间。
+  var today = new Date();
+Array对象：用于单独的变量名来存储一系列的值
+  创建方法：
+  1: 常规方式:
+  var myCars=new Array(); 
+  myCars[0]="Saab";       
+  myCars[1]="Volvo";
+  myCars[2]="BMW";
+  2: 简洁方式:
+  var myCars=new Array("Saab","Volvo","BMW");
+  3: 字面:
+  var myCars=["Saab","Volvo","BMW"];
+Boolean对象：用于将非布尔值转换为布尔值(true或false);
+  var myBoolean = new Boolean();
+  Boolean对象的初始值是false,如果布尔对象无初始值或者其值为0,-0,null,...,false,undefined,NaN，那么对象的值为false
+  
