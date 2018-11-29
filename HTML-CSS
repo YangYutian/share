@@ -6,4 +6,22 @@ CSS盒子模型详解：
 因此不会遮挡其后的任何元素。
     提示：背景应用于由内容和内边距、边框组成的区域。内边距、边框和外边距都是可选的，默认值都是0.
     2.在CSS中，width和height指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。
-    提示：内边距、边框和外边距可以应用于一个元素的所有边，也可以应用于单独的边。
+    提示：
+        内边距、边框和外边距可以应用于一个元素的所有边，如：{margin: 4px(top) 5px(right) 6px(bottom) 7px(left);}。
+        也可以应用于单独的边,如：{margin-top:4px;margin-bottom: 6px;},
+    margin和padding的四种写法：
+        margin: 10px; //4个外边距都是10px
+        margin: 10px 20px; //上下外边距是10px，左右外边距是20px
+        margin: 10px 20px 30px; //上外边距是10px，左右外边距是20px，下外边距是30px
+        margin: 10px 20px 30px 40px; //上外边距是10px，右外边距是20px，下外边距是30px，左外边距是40px
+        padding对应的语义与margin相同
+        各边距可以使用不同的单位或百分比值：
+        h1 {
+            padding: 10px 0.25em 2ex 20%;
+        }
+        %: 百分比数值是相对于其父元素的width计算的，和外边距一样，如果父元素的width改变，它们也会改变。
+        在CSS样式表中有绝对长度单位和相对长度单位
+        相对长度单位：如px,em,ex(相对于字母"x"的高度，此高度通常为字体尺寸的一半),ch,rem(相对于根元素html的font-size属性的计数值)
+        绝对长度单位：代表一个物理测量，如in(inches),cm(centimeters),mm(millimeters),pt(points)
+        
+      
